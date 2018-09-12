@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    volumes:
+      - mongodata:/data/db
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+
+  services.web.api:
+    image: ${DOCKER_REGISTRY}serviceswebapi
+    build:
+      context: .
+      dockerfile: src/Services.Web.Api/Dockerfile
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    tty: true
+
+  presentation.web:
+    image: ${DOCKER_REGISTRY}presentationweb
+    build:
+      context: .
+      dockerfile: src/Presentation.Web/Dockerfile
+    links:
+      - services.web.api
+    depends_on:
+      - services.web.api
+
+volumes:
+  mongodata:

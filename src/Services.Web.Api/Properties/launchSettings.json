@@ -1,0 +1,76 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:53719/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "localhost": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "docs/",
+      "environmentVariables": {
+        "CRYPTO_KEY": "dsgfhu675rewfGHgfdu6453e",
+        "ASPNETCORE_ENVIRONMENT": "localhost"
+      }
+    },
+    "Development": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "docs/",
+        "environmentVariables": {
+            "CRYPTO_KEY": "dsgfhu675rewfGHgfdu6453e",
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+    },
+    "Staging": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "docs/",
+      "environmentVariables": {
+        "CRYPTO_KEY": "dsgfhu675rewfGHgfdu6453e",
+        "ASPNETCORE_ENVIRONMENT": "Staging"
+      }
+    },
+    "Hotfix": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "docs/",
+      "environmentVariables": {
+        "CRYPTO_KEY": "dsgfhu675rewfGHgfdu6453e",
+        "ASPNETCORE_ENVIRONMENT": "Hotfix"
+      }
+    },
+    "Sandbox": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "docs/",
+      "environmentVariables": {
+        "CRYPTO_KEY": "dsgfhu675rewfGHgfdu6453e",
+        "ASPNETCORE_ENVIRONMENT": "Sandbox"
+      }
+    },
+    "Production": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "docs/",
+      "environmentVariables": {
+        "CRYPTO_KEY": "dsgfhu675rewfGHgfdu6453e",
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    },
+    "Services.Web.Api": {
+        "commandName": "Project",
+        "launchBrowser": true,
+        "launchUrl": "docs/",
+        "environmentVariables": {
+            "CRYPTO_KEY": "dsgfhu675rewfGHgfdu6453e",
+            "ASPNETCORE_ENVIRONMENT": "localhost"
+        },
+        "applicationUrl": "http://localhost:53719/"
+    }
+  }
+}

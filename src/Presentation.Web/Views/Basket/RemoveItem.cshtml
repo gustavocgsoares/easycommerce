@@ -1,0 +1,51 @@
+﻿@model Easy.Commerce.Presentation.Web.Models.BasketRemoveItemViewModel
+
+@{
+    ViewData["Title"] = "BasketDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Item adicionado com sucesso!</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemsQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemsQuantity)
+        </dd>
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+    </dl>
+</div>
+<div>
+    <p><strong>Passo 3</strong> - Remover um item no carrinho</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="RemoveItem">
+                <input asp-for="Id" type="hidden" />
+                <input asp-for="Sku" type="hidden" />
+                <div class="form-group">
+                    <input type="submit" value="Clique aqui para remover" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "BasketDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Parabéns!</h2>
+
+<div>
+    <p>Você concluiu com sucesso o tutorial do Basket Microservices</p>
+    <input type="button" value="Clique aqui para fazer o processo novamente" onclick="location.href='@Url.Action("Sandbox", "Home")'" />
+</div>
