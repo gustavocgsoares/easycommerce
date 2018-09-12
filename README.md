@@ -42,7 +42,7 @@ Open Visual Studio 2018
  
 #### Developping
 On a dev environment run (inside the project's root folder):
-run the docker-compose inside Visual Studio 2018
+set the docker-compose as Startup Project inside Visual Studio 2018
 Press F5
 Open the link http://localhost:81 to test
 
