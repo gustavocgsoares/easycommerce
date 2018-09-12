@@ -2,19 +2,18 @@
 
 This project aims to make available the Easy Commerce APIs, obtaining content from the mongo database.
 
-#### Official documentation
+#### Official documentation when the project is running
 
-Login the [website](https://dev.easycommerce.com.br)
+Login the [website](localhost:81)
 
-Go to [documentation](https://dev.easycommerce.com.br/document)
+Go to [documentation](localhost:8080/docs/)
 
 #### Environments
 
 | Environment    | URL																					|
 |----------------|--------------------------------------------------------------------------------------|
-| **DEV**        | [api-dev.easycommerce.com.br](https://api-dev.easycommerce.com.br/docs/)   |
-| **STG**		 | [api-stg.easycommerce.com.br](https://api-stg.easycommerce.com.br/docs/)   |
-| **PRD**        | [api.easycommerce.com.br](https://api.easycommerce.com.br/docs/)           |
+| **API**        | [localhost:8080/docs/](http://localhost:8080/docs/)   |
+| **WEB**		     | [localhost:81](http://localhost:81)   |
 
 #### Available APIs
 | API                        | Status     
@@ -22,8 +21,7 @@ Go to [documentation](https://dev.easycommerce.com.br/document)
 |`GetBasketById`      		 | ✔️ |  
 |`CreateBasket`     		 | ✔️ |    
 |`AddBasketItem` 			 | ✔️ |    
-|`RemoveItem` 				 | ✔️ |   
-|`ClearBasket`      		 | ✔️ |   
+|`RemoveItem` 				 | ✔️ |  
 
 #### Installation
 This API whas built with .Net Core --version 2.0.0
@@ -32,21 +30,21 @@ If not follow [this instructions](https://www.microsoft.com/net/download/core)
 
 Then, git clone this repository
 ```bash
-  https://easycommerce.visualstudio.com/Projects/_git/easycommerce
+  https://github.com/gustavocgsoares/easycommerce.git
 ```
 
 After cloning, run:
 ```bash
  cd easycommerce
- dotnet restore
- dotnet build
 ```
 
+Open Visual Studio 2018
+ 
 #### Developping
 On a dev environment run (inside the project's root folder):
-```bash
-  dotnet run
-```
+run the docker-compose inside Visual Studio 2018
+Press F5
+Open the link http://localhost:81 to test
 
 Enjoy ;D
 
